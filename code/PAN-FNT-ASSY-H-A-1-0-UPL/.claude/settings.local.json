@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(pio run)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)"
+    ]
+  }
+}

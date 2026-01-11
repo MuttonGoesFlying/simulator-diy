@@ -1,0 +1,1674 @@
+{
+          "AN/ARC-51": {
+                             "ARC51_CHANNEL": {
+                                                      "category": "AN/ARC-51",
+                                                  "control_type": "selector",
+                                                   "description": "AN/ARC-51 Preset Channel",
+                                                    "identifier": "ARC51_CHANNEL",
+                                                        "inputs": [ {
+                                                                      "description": "switch to previous or next state",
+                                                                        "interface": "fixed_step"
+                                                                  }, {
+                                                                      "description": "set position",
+                                                                        "interface": "set_state",
+                                                                        "max_value": 19
+                                                                  } ],
+                                                       "outputs": [ {
+                                                                                            "address": 35870,
+                                                                      "address_mask_shift_identifier": "OH_6A_ARC51_CHANNEL",
+                                                                                        "description": "selector position",
+                                                                                               "mask": 31,
+                                                                                          "max_value": 19,
+                                                                                           "shift_by": 0,
+                                                                                             "suffix": "",
+                                                                                               "type": "integer"
+                                                                  } ]
+                                              },
+                           "ARC51_SELECTOR1": {
+                                                      "category": "AN/ARC-51",
+                                                  "control_type": "selector",
+                                                   "description": "AN/ARC-51 Function Selector",
+                                                    "identifier": "ARC51_SELECTOR1",
+                                                        "inputs": [ {
+                                                                      "description": "switch to previous or next state",
+                                                                        "interface": "fixed_step"
+                                                                  }, {
+                                                                      "description": "set position",
+                                                                        "interface": "set_state",
+                                                                        "max_value": 3
+                                                                  } ],
+                                                       "outputs": [ {
+                                                                                            "address": 35870,
+                                                                      "address_mask_shift_identifier": "OH_6A_ARC51_SELECTOR1",
+                                                                                        "description": "selector position",
+                                                                                               "mask": 96,
+                                                                                          "max_value": 3,
+                                                                                           "shift_by": 5,
+                                                                                             "suffix": "",
+                                                                                               "type": "integer"
+                                                                  } ]
+                                              },
+                           "ARC51_SELECTOR2": {
+                                                      "category": "AN/ARC-51",
+                                                  "control_type": "selector",
+                                                   "description": "AN/ARC-51 Mode Selector",
+                                                    "identifier": "ARC51_SELECTOR2",
+                                                        "inputs": [ {
+                                                                      "description": "switch to previous or next state",
+                                                                        "interface": "fixed_step"
+                                                                  }, {
+                                                                      "description": "set position",
+                                                                        "interface": "set_state",
+                                                                        "max_value": 1
+                                                                  }, {
+                                                                         "argument": "TOGGLE",
+                                                                      "description": "Toggle switch state",
+                                                                        "interface": "action"
+                                                                  } ],
+                                                       "outputs": [ {
+                                                                                            "address": 35860,
+                                                                            "address_mask_identifier": "OH_6A_ARC51_SELECTOR2_AM",
+                                                                      "address_mask_shift_identifier": "OH_6A_ARC51_SELECTOR2",
+                                                                                        "description": "selector position",
+                                                                                               "mask": 32768,
+                                                                                          "max_value": 1,
+                                                                                           "shift_by": 15,
+                                                                                             "suffix": "",
+                                                                                               "type": "integer"
+                                                                  } ]
+                                              },
+                              "ARC51_SWITCH": {
+                                                      "category": "AN/ARC-51",
+                                                  "control_type": "selector",
+                                                   "description": "AN/ARC-51 Squelch Switch",
+                                                    "identifier": "ARC51_SWITCH",
+                                                        "inputs": [ {
+                                                                      "description": "switch to previous or next state",
+                                                                        "interface": "fixed_step"
+                                                                  }, {
+                                                                      "description": "set position",
+                                                                        "interface": "set_state",
+                                                                        "max_value": 1
+                                                                  }, {
+                                                                         "argument": "TOGGLE",
+                                                                      "description": "Toggle switch state",
+                                                                        "interface": "action"
+                                                                  } ],
+                                                       "outputs": [ {
+                                                                                            "address": 35860,
+                                                                            "address_mask_identifier": "OH_6A_ARC51_SWITCH_AM",
+                                                                      "address_mask_shift_identifier": "OH_6A_ARC51_SWITCH",
+                                                                                        "description": "selector position",
+                                                                                               "mask": 16384,
+                                                                                          "max_value": 1,
+                                                                                           "shift_by": 14,
+                                                                                             "suffix": "",
+                                                                                               "type": "integer"
+                                                                  } ]
+                                              },
+                               "ARC51_TUNE1": {
+                                                      "category": "AN/ARC-51",
+                                                  "control_type": "selector",
+                                                   "description": "AN/ARC-51 10 Megacycle Tune",
+                                                    "identifier": "ARC51_TUNE1",
+                                                        "inputs": [ {
+                                                                      "description": "switch to previous or next state",
+                                                                        "interface": "fixed_step"
+                                                                  }, {
+                                                                      "description": "set position",
+                                                                        "interface": "set_state",
+                                                                        "max_value": 17
+                                                                  } ],
+                                                       "outputs": [ {
+                                                                                            "address": 35870,
+                                                                      "address_mask_shift_identifier": "OH_6A_ARC51_TUNE1",
+                                                                                        "description": "selector position",
+                                                                                               "mask": 3968,
+                                                                                          "max_value": 17,
+                                                                                           "shift_by": 7,
+                                                                                             "suffix": "",
+                                                                                               "type": "integer"
+                                                                  } ]
+                                              },
+                               "ARC51_TUNE2": {
+                                                      "category": "AN/ARC-51",
+                                                  "control_type": "selector",
+                                                   "description": "AN/ARC-51 Megacycle Tune",
+                                                    "identifier": "ARC51_TUNE2",
+                                                        "inputs": [ {
+                                                                      "description": "switch to previous or next state",
+                                                                        "interface": "fixed_step"
+                                                                  }, {
+                                                                      "description": "set position",
+                                                                        "interface": "set_state",
+                                                                        "max_value": 9
+                                                                  } ],
+                                                       "outputs": [ {
+                                                                                            "address": 35870,
+                                                                      "address_mask_shift_identifier": "OH_6A_ARC51_TUNE2",
+                                                                                        "description": "selector position",
+                                                                                               "mask": 61440,
+                                                                                          "max_value": 9,
+                                                                                           "shift_by": 12,
+                                                                                             "suffix": "",
+                                                                                               "type": "integer"
+                                                                  } ]
+                                              },
+                               "ARC51_TUNE3": {
+                                                      "category": "AN/ARC-51",
+                                                  "control_type": "selector",
+                                                   "description": "AN/ARC-51 Deci-Megacycle Tune",
+                                                    "identifier": "ARC51_TUNE3",
+                                                        "inputs": [ {
+                                                                      "description": "switch to previous or next state",
+                                                                        "interface": "fixed_step"
+                                                                  }, {
+                                                                      "description": "set position",
+                                                                        "interface": "set_state",
+                                                                        "max_value": 19
+                                                                  } ],
+                                                       "outputs": [ {
+                                                                                            "address": 35874,
+                                                                      "address_mask_shift_identifier": "OH_6A_ARC51_TUNE3",
+                                                                                        "description": "selector position",
+                                                                                               "mask": 31,
+                                                                                          "max_value": 19,
+                                                                                           "shift_by": 0,
+                                                                                             "suffix": "",
+                                                                                               "type": "integer"
+                                                                  } ]
+                                              },
+                              "ARC51_VOLUME": {
+                                                      "category": "AN/ARC-51",
+                                                  "control_type": "limited_dial",
+                                                   "description": "AN/ARC-51 Volume",
+                                                    "identifier": "ARC51_VOLUME",
+                                                        "inputs": [ {
+                                                                      "description": "set the position of the dial",
+                                                                        "interface": "set_state",
+                                                                        "max_value": 65535
+                                                                  }, {
+                                                                         "description": "turn the dial left or right",
+                                                                           "interface": "variable_step",
+                                                                           "max_value": 65535,
+                                                                      "suggested_step": 3200
+                                                                  } ],
+                                                       "outputs": [ {
+                                                                                            "address": 35872,
+                                                                                 "address_identifier": "OH_6A_ARC51_VOLUME_A",
+                                                                      "address_mask_shift_identifier": "OH_6A_ARC51_VOLUME",
+                                                                                        "description": "position of the potentiometer",
+                                                                                               "mask": 65535,
+                                                                                          "max_value": 65535,
+                                                                                           "shift_by": 0,
+                                                                                             "suffix": "",
+                                                                                               "type": "integer"
+                                                                  } ]
+                                              }
+                       },
+          "AN/ARC-54": {
+                              "ARC54_MODE": {
+                                                    "category": "AN/ARC-54",
+                                                "control_type": "selector",
+                                                 "description": "AN/ARC-54 Mode Selector",
+                                                  "identifier": "ARC54_MODE",
+                                                      "inputs": [ {
+                                                                    "description": "switch to previous or next state",
+                                                                      "interface": "fixed_step"
+                                                                }, {
+                                                                    "description": "set position",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 3
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35860,
+                                                                    "address_mask_shift_identifier": "OH_6A_ARC54_MODE",
+                                                                                      "description": "selector position",
+                                                                                             "mask": 12288,
+                                                                                        "max_value": 3,
+                                                                                         "shift_by": 12,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                           "ARC54_SQUELCH": {
+                                                    "category": "AN/ARC-54",
+                                                "control_type": "selector",
+                                                 "description": "AN/ARC-54 Squelch",
+                                                  "identifier": "ARC54_SQUELCH",
+                                                      "inputs": [ {
+                                                                    "description": "switch to previous or next state",
+                                                                      "interface": "fixed_step"
+                                                                }, {
+                                                                    "description": "set position",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 2
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35860,
+                                                                    "address_mask_shift_identifier": "OH_6A_ARC54_SQUELCH",
+                                                                                      "description": "selector position",
+                                                                                             "mask": 3072,
+                                                                                        "max_value": 2,
+                                                                                         "shift_by": 10,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                             "ARC54_TUNE1": {
+                                                 "api_variant": "multiturn",
+                                                    "category": "AN/ARC-54",
+                                                "control_type": "analog_dial",
+                                                 "description": "AN/ARC-54 Megacycle Tune",
+                                                  "identifier": "ARC54_TUNE1",
+                                                      "inputs": [ {
+                                                                       "description": "turn the dial left or right",
+                                                                         "interface": "variable_step",
+                                                                         "max_value": 65535,
+                                                                    "suggested_step": 3200
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35864,
+                                                                               "address_identifier": "OH_6A_ARC54_TUNE1_A",
+                                                                    "address_mask_shift_identifier": "OH_6A_ARC54_TUNE1",
+                                                                                      "description": "the rotation of the knob in the cockpit (not the value that is controlled by this knob!)",
+                                                                                             "mask": 65535,
+                                                                                        "max_value": 65535,
+                                                                                         "shift_by": 0,
+                                                                                           "suffix": "_KNOB_POS",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                             "ARC54_TUNE2": {
+                                                 "api_variant": "multiturn",
+                                                    "category": "AN/ARC-54",
+                                                "control_type": "analog_dial",
+                                                 "description": "AN/ARC-54 Decimal-Megacycle Tune",
+                                                  "identifier": "ARC54_TUNE2",
+                                                      "inputs": [ {
+                                                                       "description": "turn the dial left or right",
+                                                                         "interface": "variable_step",
+                                                                         "max_value": 65535,
+                                                                    "suggested_step": 3200
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35866,
+                                                                               "address_identifier": "OH_6A_ARC54_TUNE2_A",
+                                                                    "address_mask_shift_identifier": "OH_6A_ARC54_TUNE2",
+                                                                                      "description": "the rotation of the knob in the cockpit (not the value that is controlled by this knob!)",
+                                                                                             "mask": 65535,
+                                                                                        "max_value": 65535,
+                                                                                         "shift_by": 0,
+                                                                                           "suffix": "_KNOB_POS",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                            "ARC54_VOLUME": {
+                                                    "category": "AN/ARC-54",
+                                                "control_type": "limited_dial",
+                                                 "description": "AN/ARC-54 Volume",
+                                                  "identifier": "ARC54_VOLUME",
+                                                      "inputs": [ {
+                                                                    "description": "set the position of the dial",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 65535
+                                                                }, {
+                                                                       "description": "turn the dial left or right",
+                                                                         "interface": "variable_step",
+                                                                         "max_value": 65535,
+                                                                    "suggested_step": 3200
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35868,
+                                                                               "address_identifier": "OH_6A_ARC54_VOLUME_A",
+                                                                    "address_mask_shift_identifier": "OH_6A_ARC54_VOLUME",
+                                                                                      "description": "position of the potentiometer",
+                                                                                             "mask": 65535,
+                                                                                        "max_value": 65535,
+                                                                                         "shift_by": 0,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            }
+                       },
+          "AN/ARC-83": {
+                             "ARC83_BAND": {
+                                                   "category": "AN/ARC-83",
+                                               "control_type": "selector",
+                                                "description": "AN/ARC-83 Band Selector",
+                                                 "identifier": "ARC83_BAND",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 2
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35874,
+                                                                   "address_mask_shift_identifier": "OH_6A_ARC83_BAND",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 768,
+                                                                                       "max_value": 2,
+                                                                                        "shift_by": 8,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                             "ARC83_GAIN": {
+                                                "api_variant": "multiturn",
+                                                   "category": "AN/ARC-83",
+                                               "control_type": "analog_dial",
+                                                "description": "AN/ARC-83 Gain",
+                                                 "identifier": "ARC83_GAIN",
+                                                     "inputs": [ {
+                                                                      "description": "turn the dial left or right",
+                                                                        "interface": "variable_step",
+                                                                        "max_value": 65535,
+                                                                   "suggested_step": 3200
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35878,
+                                                                              "address_identifier": "OH_6A_ARC83_GAIN_A",
+                                                                   "address_mask_shift_identifier": "OH_6A_ARC83_GAIN",
+                                                                                     "description": "the rotation of the knob in the cockpit (not the value that is controlled by this knob!)",
+                                                                                            "mask": 65535,
+                                                                                       "max_value": 65535,
+                                                                                        "shift_by": 0,
+                                                                                          "suffix": "_KNOB_POS",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                             "ARC83_LOOP": {
+                                                   "category": "AN/ARC-83",
+                                               "control_type": "limited_dial",
+                                                "description": "AN/ARC-83 Loop",
+                                                 "identifier": "ARC83_LOOP",
+                                                     "inputs": [ {
+                                                                   "description": "set the position of the dial",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 65535
+                                                               }, {
+                                                                      "description": "turn the dial left or right",
+                                                                        "interface": "variable_step",
+                                                                        "max_value": 65535,
+                                                                   "suggested_step": 3200
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35876,
+                                                                              "address_identifier": "OH_6A_ARC83_LOOP_A",
+                                                                   "address_mask_shift_identifier": "OH_6A_ARC83_LOOP",
+                                                                                     "description": "position of the potentiometer",
+                                                                                            "mask": 65535,
+                                                                                       "max_value": 65535,
+                                                                                        "shift_by": 0,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                            "ARC83_POWER": {
+                                                   "category": "AN/ARC-83",
+                                               "control_type": "selector",
+                                                "description": "AN/ARC-83 Power/Function Selector",
+                                                 "identifier": "ARC83_POWER",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 3
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35874,
+                                                                   "address_mask_shift_identifier": "OH_6A_ARC83_POWER",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 192,
+                                                                                       "max_value": 3,
+                                                                                        "shift_by": 6,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                           "ARC83_SWITCH": {
+                                                   "category": "AN/ARC-83",
+                                               "control_type": "selector",
+                                                "description": "AN/ARC-83 Squelch Switch",
+                                                 "identifier": "ARC83_SWITCH",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 1
+                                                               }, {
+                                                                      "argument": "TOGGLE",
+                                                                   "description": "Toggle switch state",
+                                                                     "interface": "action"
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35874,
+                                                                         "address_mask_identifier": "OH_6A_ARC83_SWITCH_AM",
+                                                                   "address_mask_shift_identifier": "OH_6A_ARC83_SWITCH",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 32,
+                                                                                       "max_value": 1,
+                                                                                        "shift_by": 5,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                             "ARC83_TUNE": {
+                                                "api_variant": "multiturn",
+                                                   "category": "AN/ARC-83",
+                                               "control_type": "analog_dial",
+                                                "description": "AN/ARC-83 Tune",
+                                                 "identifier": "ARC83_TUNE",
+                                                     "inputs": [ {
+                                                                      "description": "turn the dial left or right",
+                                                                        "interface": "variable_step",
+                                                                        "max_value": 65535,
+                                                                   "suggested_step": 3200
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35880,
+                                                                              "address_identifier": "OH_6A_ARC83_TUNE_A",
+                                                                   "address_mask_shift_identifier": "OH_6A_ARC83_TUNE",
+                                                                                     "description": "the rotation of the knob in the cockpit (not the value that is controlled by this knob!)",
+                                                                                            "mask": 65535,
+                                                                                       "max_value": 65535,
+                                                                                        "shift_by": 0,
+                                                                                          "suffix": "_KNOB_POS",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           }
+                       },
+           "Avionics": {
+                           "BARO_ALT": {
+                                            "api_variant": "multiturn",
+                                               "category": "Avionics",
+                                           "control_type": "analog_dial",
+                                            "description": "Barometric Altimeter Adjustment",
+                                             "identifier": "BARO_ALT",
+                                                 "inputs": [ {
+                                                                  "description": "turn the dial left or right",
+                                                                    "interface": "variable_step",
+                                                                    "max_value": 65535,
+                                                               "suggested_step": 3200
+                                                           } ],
+                                                "outputs": [ {
+                                                                                     "address": 35852,
+                                                                          "address_identifier": "OH_6A_BARO_ALT_A",
+                                                               "address_mask_shift_identifier": "OH_6A_BARO_ALT",
+                                                                                 "description": "the rotation of the knob in the cockpit (not the value that is controlled by this knob!)",
+                                                                                        "mask": 65535,
+                                                                                   "max_value": 65535,
+                                                                                    "shift_by": 0,
+                                                                                      "suffix": "_KNOB_POS",
+                                                                                        "type": "integer"
+                                                           } ]
+                                       }
+                       },
+    "Countermeasures": {
+                                "FLARE_ARM": {
+                                                     "category": "Countermeasures",
+                                                 "control_type": "selector",
+                                                  "description": "Flare Arm/Safe Switch",
+                                                   "identifier": "FLARE_ARM",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 1
+                                                                 }, {
+                                                                        "argument": "TOGGLE",
+                                                                     "description": "Toggle switch state",
+                                                                       "interface": "action"
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35842,
+                                                                           "address_mask_identifier": "OH_6A_FLARE_ARM_AM",
+                                                                     "address_mask_shift_identifier": "OH_6A_FLARE_ARM",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 2,
+                                                                                         "max_value": 1,
+                                                                                          "shift_by": 1,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             },
+                           "FLARE_DISPENSE": {
+                                                  "api_variant": "momentary_last_position",
+                                                     "category": "Countermeasures",
+                                                 "control_type": "selector",
+                                                  "description": "Flare Dispense Button",
+                                                   "identifier": "FLARE_DISPENSE",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 1
+                                                                 }, {
+                                                                        "argument": "TOGGLE",
+                                                                     "description": "Toggle switch state",
+                                                                       "interface": "action"
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35842,
+                                                                           "address_mask_identifier": "OH_6A_FLARE_DISPENSE_AM",
+                                                                     "address_mask_shift_identifier": "OH_6A_FLARE_DISPENSE",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 4,
+                                                                                         "max_value": 1,
+                                                                                          "shift_by": 2,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             }
+                       },
+    "Electric System": {
+                               "AUX_TANK": {
+                                                   "category": "Electric System",
+                                               "control_type": "selector",
+                                                "description": "Auxiliary Tank Switch, ON/OFF",
+                                                 "identifier": "AUX_TANK",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 1
+                                                               }, {
+                                                                      "argument": "TOGGLE",
+                                                                   "description": "Toggle switch state",
+                                                                     "interface": "action"
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35840,
+                                                                         "address_mask_identifier": "OH_6A_AUX_TANK_AM",
+                                                                   "address_mask_shift_identifier": "OH_6A_AUX_TANK",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 4,
+                                                                                       "max_value": 1,
+                                                                                        "shift_by": 2,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                              "FUEL_PUMP": {
+                                                   "category": "Electric System",
+                                               "control_type": "selector",
+                                                "description": "Fuel Pump Switch, ON/OFF",
+                                                 "identifier": "FUEL_PUMP",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 1
+                                                               }, {
+                                                                      "argument": "TOGGLE",
+                                                                   "description": "Toggle switch state",
+                                                                     "interface": "action"
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35840,
+                                                                         "address_mask_identifier": "OH_6A_FUEL_PUMP_AM",
+                                                                   "address_mask_shift_identifier": "OH_6A_FUEL_PUMP",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 16,
+                                                                                       "max_value": 1,
+                                                                                        "shift_by": 4,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                                    "GEN": {
+                                                   "category": "Electric System",
+                                               "control_type": "selector",
+                                                "description": "Generator Switch, ON/OFF",
+                                                 "identifier": "GEN",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 1
+                                                               }, {
+                                                                      "argument": "TOGGLE",
+                                                                   "description": "Toggle switch state",
+                                                                     "interface": "action"
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35840,
+                                                                         "address_mask_identifier": "OH_6A_GEN_AM",
+                                                                   "address_mask_shift_identifier": "OH_6A_GEN",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 8,
+                                                                                       "max_value": 1,
+                                                                                        "shift_by": 3,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                                   "GYRO": {
+                                                   "category": "Electric System",
+                                               "control_type": "selector",
+                                                "description": "Gyro Switch, ON/OFF",
+                                                 "identifier": "GYRO",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 1
+                                                               }, {
+                                                                      "argument": "TOGGLE",
+                                                                   "description": "Toggle switch state",
+                                                                     "interface": "action"
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35840,
+                                                                         "address_mask_identifier": "OH_6A_GYRO_AM",
+                                                                   "address_mask_shift_identifier": "OH_6A_GYRO",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 1,
+                                                                                       "max_value": 1,
+                                                                                        "shift_by": 0,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                               "INVERTER": {
+                                                   "category": "Electric System",
+                                               "control_type": "selector",
+                                                "description": "Inverter Switch, ON/OFF",
+                                                 "identifier": "INVERTER",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 1
+                                                               }, {
+                                                                      "argument": "TOGGLE",
+                                                                   "description": "Toggle switch state",
+                                                                     "interface": "action"
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35840,
+                                                                         "address_mask_identifier": "OH_6A_INVERTER_AM",
+                                                                   "address_mask_shift_identifier": "OH_6A_INVERTER",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 2,
+                                                                                       "max_value": 1,
+                                                                                        "shift_by": 1,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           },
+                           "POWER_SWITCH": {
+                                                   "category": "Electric System",
+                                               "control_type": "selector",
+                                                "description": "Power Switch, BATT/OFF/EXT",
+                                                 "identifier": "POWER_SWITCH",
+                                                     "inputs": [ {
+                                                                   "description": "switch to previous or next state",
+                                                                     "interface": "fixed_step"
+                                                               }, {
+                                                                   "description": "set position",
+                                                                     "interface": "set_state",
+                                                                     "max_value": 2
+                                                               } ],
+                                                    "outputs": [ {
+                                                                                         "address": 35840,
+                                                                   "address_mask_shift_identifier": "OH_6A_POWER_SWITCH",
+                                                                                     "description": "selector position",
+                                                                                            "mask": 96,
+                                                                                       "max_value": 2,
+                                                                                        "shift_by": 5,
+                                                                                          "suffix": "",
+                                                                                            "type": "integer"
+                                                               } ]
+                                           }
+                       },
+        "Fuel System": {
+                           "FUEL_VALVE": {
+                                                 "category": "Fuel System",
+                                             "control_type": "selector",
+                                              "description": "Fuel Valve Lever, ON/OFF",
+                                               "identifier": "FUEL_VALVE",
+                                                   "inputs": [ {
+                                                                 "description": "switch to previous or next state",
+                                                                   "interface": "fixed_step"
+                                                             }, {
+                                                                 "description": "set position",
+                                                                   "interface": "set_state",
+                                                                   "max_value": 1
+                                                             }, {
+                                                                    "argument": "TOGGLE",
+                                                                 "description": "Toggle switch state",
+                                                                   "interface": "action"
+                                                             } ],
+                                                  "outputs": [ {
+                                                                                       "address": 35840,
+                                                                       "address_mask_identifier": "OH_6A_FUEL_VALVE_AM",
+                                                                 "address_mask_shift_identifier": "OH_6A_FUEL_VALVE",
+                                                                                   "description": "selector position",
+                                                                                          "mask": 128,
+                                                                                     "max_value": 1,
+                                                                                      "shift_by": 7,
+                                                                                        "suffix": "",
+                                                                                          "type": "integer"
+                                                             } ]
+                                         }
+                       },
+           "Gunsight": {
+                           "GUNSIGHT": {
+                                               "category": "Gunsight",
+                                           "control_type": "selector",
+                                            "description": "Gunsight Toggle",
+                                             "identifier": "GUNSIGHT",
+                                                 "inputs": [ {
+                                                               "description": "switch to previous or next state",
+                                                                 "interface": "fixed_step"
+                                                           }, {
+                                                               "description": "set position",
+                                                                 "interface": "set_state",
+                                                                 "max_value": 1
+                                                           }, {
+                                                                  "argument": "TOGGLE",
+                                                               "description": "Toggle switch state",
+                                                                 "interface": "action"
+                                                           } ],
+                                                "outputs": [ {
+                                                                                     "address": 35842,
+                                                                     "address_mask_identifier": "OH_6A_GUNSIGHT_AM",
+                                                               "address_mask_shift_identifier": "OH_6A_GUNSIGHT",
+                                                                                 "description": "selector position",
+                                                                                        "mask": 64,
+                                                                                   "max_value": 1,
+                                                                                    "shift_by": 6,
+                                                                                      "suffix": "",
+                                                                                        "type": "integer"
+                                                           } ]
+                                       }
+                       },
+           "Intercom": {
+                                "INTERCOM1_1": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 1 Switch 1",
+                                                     "identifier": "INTERCOM1_1",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35842,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM1_1_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM1_1",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 256,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 8,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                                "INTERCOM1_2": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 1 Switch 2",
+                                                     "identifier": "INTERCOM1_2",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35842,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM1_2_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM1_2",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 512,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 9,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                                "INTERCOM1_3": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 1 Switch 3",
+                                                     "identifier": "INTERCOM1_3",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35842,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM1_3_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM1_3",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 1024,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 10,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                                "INTERCOM1_4": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 1 Switch 4",
+                                                     "identifier": "INTERCOM1_4",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35842,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM1_4_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM1_4",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 2048,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 11,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                              "INTERCOM1_INT": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 1 INT Switch",
+                                                     "identifier": "INTERCOM1_INT",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35842,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM1_INT_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM1_INT",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 4096,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 12,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                              "INTERCOM1_NAV": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 1 NAV Switch",
+                                                     "identifier": "INTERCOM1_NAV",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35842,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM1_NAV_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM1_NAV",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 8192,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 13,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                           "INTERCOM1_SELECT": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 1 Selector",
+                                                     "identifier": "INTERCOM1_SELECT",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 5
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35860,
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM1_SELECT",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 7,
+                                                                                           "max_value": 5,
+                                                                                            "shift_by": 0,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                              "INTERCOM1_VOL": {
+                                                       "category": "Intercom",
+                                                   "control_type": "limited_dial",
+                                                    "description": "Intercom 1 Volume Knob",
+                                                     "identifier": "INTERCOM1_VOL",
+                                                         "inputs": [ {
+                                                                       "description": "set the position of the dial",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 65535
+                                                                   }, {
+                                                                          "description": "turn the dial left or right",
+                                                                            "interface": "variable_step",
+                                                                            "max_value": 65535,
+                                                                       "suggested_step": 3200
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35858,
+                                                                                  "address_identifier": "OH_6A_INTERCOM1_VOL_A",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM1_VOL",
+                                                                                         "description": "position of the potentiometer",
+                                                                                                "mask": 65535,
+                                                                                           "max_value": 65535,
+                                                                                            "shift_by": 0,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                                "INTERCOM2_1": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 2 Switch 1",
+                                                     "identifier": "INTERCOM2_1",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35842,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM2_1_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM2_1",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 16384,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 14,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                                "INTERCOM2_2": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 2 Switch 2",
+                                                     "identifier": "INTERCOM2_2",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35842,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM2_2_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM2_2",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 32768,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 15,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                                "INTERCOM2_3": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 2 Switch 3",
+                                                     "identifier": "INTERCOM2_3",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35860,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM2_3_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM2_3",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 8,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 3,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                                "INTERCOM2_4": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 2 Switch 4",
+                                                     "identifier": "INTERCOM2_4",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35860,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM2_4_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM2_4",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 16,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 4,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                              "INTERCOM2_INT": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 2 INT Switch",
+                                                     "identifier": "INTERCOM2_INT",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35860,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM2_INT_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM2_INT",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 32,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 5,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                              "INTERCOM2_NAV": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 2 NAV Switch",
+                                                     "identifier": "INTERCOM2_NAV",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 1
+                                                                   }, {
+                                                                          "argument": "TOGGLE",
+                                                                       "description": "Toggle switch state",
+                                                                         "interface": "action"
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35860,
+                                                                             "address_mask_identifier": "OH_6A_INTERCOM2_NAV_AM",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM2_NAV",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 64,
+                                                                                           "max_value": 1,
+                                                                                            "shift_by": 6,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                           "INTERCOM2_SELECT": {
+                                                       "category": "Intercom",
+                                                   "control_type": "selector",
+                                                    "description": "Intercom 2 Selector",
+                                                     "identifier": "INTERCOM2_SELECT",
+                                                         "inputs": [ {
+                                                                       "description": "switch to previous or next state",
+                                                                         "interface": "fixed_step"
+                                                                   }, {
+                                                                       "description": "set position",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 5
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35860,
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM2_SELECT",
+                                                                                         "description": "selector position",
+                                                                                                "mask": 896,
+                                                                                           "max_value": 5,
+                                                                                            "shift_by": 7,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               },
+                              "INTERCOM2_VOL": {
+                                                       "category": "Intercom",
+                                                   "control_type": "limited_dial",
+                                                    "description": "Intercom 2 Volume Knob",
+                                                     "identifier": "INTERCOM2_VOL",
+                                                         "inputs": [ {
+                                                                       "description": "set the position of the dial",
+                                                                         "interface": "set_state",
+                                                                         "max_value": 65535
+                                                                   }, {
+                                                                          "description": "turn the dial left or right",
+                                                                            "interface": "variable_step",
+                                                                            "max_value": 65535,
+                                                                       "suggested_step": 3200
+                                                                   } ],
+                                                        "outputs": [ {
+                                                                                             "address": 35862,
+                                                                                  "address_identifier": "OH_6A_INTERCOM2_VOL_A",
+                                                                       "address_mask_shift_identifier": "OH_6A_INTERCOM2_VOL",
+                                                                                         "description": "position of the potentiometer",
+                                                                                                "mask": 65535,
+                                                                                           "max_value": 65535,
+                                                                                            "shift_by": 0,
+                                                                                              "suffix": "",
+                                                                                                "type": "integer"
+                                                                   } ]
+                                               }
+                       },
+             "Lights": {
+                           "ANTICOL_LIGHT": {
+                                                    "category": "Lights",
+                                                "control_type": "selector",
+                                                 "description": "Anti-Collision Light, OFF/ON",
+                                                  "identifier": "ANTICOL_LIGHT",
+                                                      "inputs": [ {
+                                                                    "description": "switch to previous or next state",
+                                                                      "interface": "fixed_step"
+                                                                }, {
+                                                                    "description": "set position",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 1
+                                                                }, {
+                                                                       "argument": "TOGGLE",
+                                                                    "description": "Toggle switch state",
+                                                                      "interface": "action"
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35842,
+                                                                          "address_mask_identifier": "OH_6A_ANTICOL_LIGHT_AM",
+                                                                    "address_mask_shift_identifier": "OH_6A_ANTICOL_LIGHT",
+                                                                                      "description": "selector position",
+                                                                                             "mask": 32,
+                                                                                        "max_value": 1,
+                                                                                         "shift_by": 5,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                            "LIGHT_ENGINE": {
+                                                    "category": "Lights",
+                                                "control_type": "limited_dial",
+                                                 "description": "Engine Lights Knob",
+                                                  "identifier": "LIGHT_ENGINE",
+                                                      "inputs": [ {
+                                                                    "description": "set the position of the dial",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 65535
+                                                                }, {
+                                                                       "description": "turn the dial left or right",
+                                                                         "interface": "variable_step",
+                                                                         "max_value": 65535,
+                                                                    "suggested_step": 3200
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35848,
+                                                                               "address_identifier": "OH_6A_LIGHT_ENGINE_A",
+                                                                    "address_mask_shift_identifier": "OH_6A_LIGHT_ENGINE",
+                                                                                      "description": "position of the potentiometer",
+                                                                                             "mask": 65535,
+                                                                                        "max_value": 65535,
+                                                                                         "shift_by": 0,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                            "LIGHT_FLIGHT": {
+                                                    "category": "Lights",
+                                                "control_type": "limited_dial",
+                                                 "description": "Flight Lights Knob",
+                                                  "identifier": "LIGHT_FLIGHT",
+                                                      "inputs": [ {
+                                                                    "description": "set the position of the dial",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 65535
+                                                                }, {
+                                                                       "description": "turn the dial left or right",
+                                                                         "interface": "variable_step",
+                                                                         "max_value": 65535,
+                                                                    "suggested_step": 3200
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35850,
+                                                                               "address_identifier": "OH_6A_LIGHT_FLIGHT_A",
+                                                                    "address_mask_shift_identifier": "OH_6A_LIGHT_FLIGHT",
+                                                                                      "description": "position of the potentiometer",
+                                                                                             "mask": 65535,
+                                                                                        "max_value": 65535,
+                                                                                         "shift_by": 0,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                             "LIGHT_PANEL": {
+                                                    "category": "Lights",
+                                                "control_type": "limited_dial",
+                                                 "description": "Panel Lights Knob",
+                                                  "identifier": "LIGHT_PANEL",
+                                                      "inputs": [ {
+                                                                    "description": "set the position of the dial",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 65535
+                                                                }, {
+                                                                       "description": "turn the dial left or right",
+                                                                         "interface": "variable_step",
+                                                                         "max_value": 65535,
+                                                                    "suggested_step": 3200
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35844,
+                                                                               "address_identifier": "OH_6A_LIGHT_PANEL_A",
+                                                                    "address_mask_shift_identifier": "OH_6A_LIGHT_PANEL",
+                                                                                      "description": "position of the potentiometer",
+                                                                                             "mask": 65535,
+                                                                                        "max_value": 65535,
+                                                                                         "shift_by": 0,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                             "LIGHT_RADIO": {
+                                                    "category": "Lights",
+                                                "control_type": "limited_dial",
+                                                 "description": "Radio Lights Knob",
+                                                  "identifier": "LIGHT_RADIO",
+                                                      "inputs": [ {
+                                                                    "description": "set the position of the dial",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 65535
+                                                                }, {
+                                                                       "description": "turn the dial left or right",
+                                                                         "interface": "variable_step",
+                                                                         "max_value": 65535,
+                                                                    "suggested_step": 3200
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35846,
+                                                                               "address_identifier": "OH_6A_LIGHT_RADIO_A",
+                                                                    "address_mask_shift_identifier": "OH_6A_LIGHT_RADIO",
+                                                                                      "description": "position of the potentiometer",
+                                                                                             "mask": 65535,
+                                                                                        "max_value": 65535,
+                                                                                         "shift_by": 0,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            },
+                               "POS_LIGHT": {
+                                                    "category": "Lights",
+                                                "control_type": "selector",
+                                                 "description": "Position Light, DIM/OFF/BRT",
+                                                  "identifier": "POS_LIGHT",
+                                                      "inputs": [ {
+                                                                    "description": "switch to previous or next state",
+                                                                      "interface": "fixed_step"
+                                                                }, {
+                                                                    "description": "set position",
+                                                                      "interface": "set_state",
+                                                                      "max_value": 2
+                                                                } ],
+                                                     "outputs": [ {
+                                                                                          "address": 35842,
+                                                                    "address_mask_shift_identifier": "OH_6A_POS_LIGHT",
+                                                                                      "description": "selector position",
+                                                                                             "mask": 24,
+                                                                                        "max_value": 2,
+                                                                                         "shift_by": 3,
+                                                                                           "suffix": "",
+                                                                                             "type": "integer"
+                                                                } ]
+                                            }
+                       },
+                "RWR": {
+                           "RWR_BRIGHTNESS": {
+                                                     "category": "RWR",
+                                                 "control_type": "limited_dial",
+                                                  "description": "RWR Brightness Knob",
+                                                   "identifier": "RWR_BRIGHTNESS",
+                                                       "inputs": [ {
+                                                                     "description": "set the position of the dial",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 65535
+                                                                 }, {
+                                                                        "description": "turn the dial left or right",
+                                                                          "interface": "variable_step",
+                                                                          "max_value": 65535,
+                                                                     "suggested_step": 3200
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35854,
+                                                                                "address_identifier": "OH_6A_RWR_BRIGHTNESS_A",
+                                                                     "address_mask_shift_identifier": "OH_6A_RWR_BRIGHTNESS",
+                                                                                       "description": "position of the potentiometer",
+                                                                                              "mask": 65535,
+                                                                                         "max_value": 65535,
+                                                                                          "shift_by": 0,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             },
+                             "RWR_LOUDNESS": {
+                                                     "category": "RWR",
+                                                 "control_type": "limited_dial",
+                                                  "description": "RWR Loudness Knob",
+                                                   "identifier": "RWR_LOUDNESS",
+                                                       "inputs": [ {
+                                                                     "description": "set the position of the dial",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 65535
+                                                                 }, {
+                                                                        "description": "turn the dial left or right",
+                                                                          "interface": "variable_step",
+                                                                          "max_value": 65535,
+                                                                     "suggested_step": 3200
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35856,
+                                                                                "address_identifier": "OH_6A_RWR_LOUDNESS_A",
+                                                                     "address_mask_shift_identifier": "OH_6A_RWR_LOUDNESS",
+                                                                                       "description": "position of the potentiometer",
+                                                                                              "mask": 65535,
+                                                                                         "max_value": 65535,
+                                                                                          "shift_by": 0,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             },
+                                "RWR_POWER": {
+                                                     "category": "RWR",
+                                                 "control_type": "selector",
+                                                  "description": "RWR Power Switch, ON/OFF",
+                                                   "identifier": "RWR_POWER",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 1
+                                                                 }, {
+                                                                        "argument": "TOGGLE",
+                                                                     "description": "Toggle switch state",
+                                                                       "interface": "action"
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35842,
+                                                                           "address_mask_identifier": "OH_6A_RWR_POWER_AM",
+                                                                     "address_mask_shift_identifier": "OH_6A_RWR_POWER",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 128,
+                                                                                         "max_value": 1,
+                                                                                          "shift_by": 7,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             }
+                       },
+      "Weapons Panel": {
+                                 "JETTISON": {
+                                                     "category": "Weapons Panel",
+                                                 "control_type": "selector",
+                                                  "description": "Jettison Switch",
+                                                   "identifier": "JETTISON",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 1
+                                                                 }, {
+                                                                        "argument": "TOGGLE",
+                                                                     "description": "Toggle switch state",
+                                                                       "interface": "action"
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35842,
+                                                                           "address_mask_identifier": "OH_6A_JETTISON_AM",
+                                                                     "address_mask_shift_identifier": "OH_6A_JETTISON",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 1,
+                                                                                         "max_value": 1,
+                                                                                          "shift_by": 0,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             },
+                           "JETTISON_COVER": {
+                                                     "category": "Weapons Panel",
+                                                 "control_type": "selector",
+                                                  "description": "Jettison Cover",
+                                                   "identifier": "JETTISON_COVER",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 1
+                                                                 }, {
+                                                                        "argument": "TOGGLE",
+                                                                     "description": "Toggle switch state",
+                                                                       "interface": "action"
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35840,
+                                                                           "address_mask_identifier": "OH_6A_JETTISON_COVER_AM",
+                                                                     "address_mask_shift_identifier": "OH_6A_JETTISON_COVER",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 32768,
+                                                                                         "max_value": 1,
+                                                                                          "shift_by": 15,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             },
+                             "ROCKET_PAIRS": {
+                                                     "category": "Weapons Panel",
+                                                 "control_type": "selector",
+                                                  "description": "Rocket Pairs Selector, 1-8",
+                                                   "identifier": "ROCKET_PAIRS",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 7
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35840,
+                                                                     "address_mask_shift_identifier": "OH_6A_ROCKET_PAIRS",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 28672,
+                                                                                         "max_value": 7,
+                                                                                          "shift_by": 12,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             },
+                               "WEAPON_ARM": {
+                                                     "category": "Weapons Panel",
+                                                 "control_type": "selector",
+                                                  "description": "Weapon Arm Switch, ARM/SAFE",
+                                                   "identifier": "WEAPON_ARM",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 1
+                                                                 }, {
+                                                                        "argument": "TOGGLE",
+                                                                     "description": "Toggle switch state",
+                                                                       "interface": "action"
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35840,
+                                                                           "address_mask_identifier": "OH_6A_WEAPON_ARM_AM",
+                                                                     "address_mask_shift_identifier": "OH_6A_WEAPON_ARM",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 256,
+                                                                                         "max_value": 1,
+                                                                                          "shift_by": 8,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             },
+                              "WEAPON_MODE": {
+                                                     "category": "Weapons Panel",
+                                                 "control_type": "selector",
+                                                  "description": "Weapon Mode, OFF/CLEAR/FIRE",
+                                                   "identifier": "WEAPON_MODE",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 2
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35840,
+                                                                     "address_mask_shift_identifier": "OH_6A_WEAPON_MODE",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 1536,
+                                                                                         "max_value": 2,
+                                                                                          "shift_by": 9,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             },
+                            "WEAPON_SELECT": {
+                                                     "category": "Weapons Panel",
+                                                 "control_type": "selector",
+                                                  "description": "Weapon Select, GUN/ROCKETS",
+                                                   "identifier": "WEAPON_SELECT",
+                                                       "inputs": [ {
+                                                                     "description": "switch to previous or next state",
+                                                                       "interface": "fixed_step"
+                                                                 }, {
+                                                                     "description": "set position",
+                                                                       "interface": "set_state",
+                                                                       "max_value": 1
+                                                                 }, {
+                                                                        "argument": "TOGGLE",
+                                                                     "description": "Toggle switch state",
+                                                                       "interface": "action"
+                                                                 } ],
+                                                      "outputs": [ {
+                                                                                           "address": 35840,
+                                                                           "address_mask_identifier": "OH_6A_WEAPON_SELECT_AM",
+                                                                     "address_mask_shift_identifier": "OH_6A_WEAPON_SELECT",
+                                                                                       "description": "selector position",
+                                                                                              "mask": 2048,
+                                                                                         "max_value": 1,
+                                                                                          "shift_by": 11,
+                                                                                            "suffix": "",
+                                                                                              "type": "integer"
+                                                                 } ]
+                                             }
+                       }
+}
