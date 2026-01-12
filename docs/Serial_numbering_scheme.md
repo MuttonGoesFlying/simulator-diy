@@ -3,43 +3,51 @@
 
 ## Function
 
-### System
+### System *
 - `FC` → flight control
 - `PAN` → panel
 - `FRA` → frame
-- `SEA` → seat
-- `MOT` → motion
-- `HAP` → haptic
 
 ---
 
-### Sub-System
-- flight control → `FRAM` flight control frame
-- flight control → `STK` stick
-- flight control → `PDL` pedal
-- flight control → `COL` collective
-- flight control → `THR` throttle
-- seat → `FRAM` seat frame
-- panel → `FNT` front panel
-- panel → `PED` pedestal
-- motion → `FRAM` seat frame
-- haptic → `AUD` audio transducer
+### Sub-System *
+- `FC` flight control → `STK` stick
+- `FC` flight control → `PDL` pedal
+- `FC` flight control → `COL` collective
+- `FC` flight control → `THR` throttle
+- `PAN` panel → `FNT` front panel
+- `PAN` panel → `PED` pedestal
+- `FRA` frame → `SEA` seat
+- `FRA` frame → `FC` flight control
+- `FRA` frame → `PAN` panel
+- `FRA` frame → `MOT` motion
 
 ---
 
-### Part
+### Part (optional)
+- `FC` flight control → `STKCOL` stick collective → `SNS` AS5600 hall effect sensor 2020 mount
+- `FC` flight control → `STK` stick → `GIM` gimbal
+- `FC` flight control → `STK` stick → `GRP` grip
+- `FC` flight control → `STK` stick → `ELV` elevation rocker switch
+- `FC` flight control → `STK` stick → `TRG` trigger
+- `FC` flight control → `STK` stick → `SUB` radio
+- `FC` flight control → `COL` stick → `GOV` governor rocker switch
+- `PAN` panel → `FNT` front panel → `GBALT` barometric altimeter guage
+
+---
+
+### Assembly (optional)
 - `ASSY` assembly
-- front panel → `GBALT` barometric altimeter guage
 
 ---
 
-### Aircraft Types
+### Aircraft Types *
 - `H` helicopter
 - `F` fixed wing
 
 ---
 
-### Models
+### Models (optional)
 - `O` OH-6A
 
 ---
@@ -49,7 +57,7 @@
 
 ---
 
-### Major – Functional Architecture
+### Major – Functional Architecture *
 Increment when **fundamental compatibility changes** occur:
 - Electrical standards (voltage, protocol)
 - Mechanical interfaces (mounting pattern)
@@ -59,7 +67,7 @@ Increment when **fundamental compatibility changes** occur:
 
 ---
 
-### Minor – Backward-Compatible Improvements
+### Minor – Backward-Compatible Improvements *
 Increment when improvements are made that **do not break system compatibility**:
 - Performance improvements
 - Efficiency gains
@@ -70,7 +78,7 @@ Increment when improvements are made that **do not break system compatibility**:
 
 ---
 
-### Variant – Parameterized Differences
+### Variant – Parameterized Differences (optional)
 Encodes **allowed variations** that preserve basic functionality but affect usage:
 - Materials
 - Voltage or power class
@@ -78,7 +86,7 @@ Encodes **allowed variations** that preserve basic functionality but affect usag
 
 **Rule:** Variants are functionally equivalent but not always application-equivalent.
 
-### Manufacture – Manufacturing processes
+### Manufacture – Manufacturing processes (optional)
 Required manufacturing processes:
 - `-3DP` → 3D print (PLA)
 - `-DR` → drill
